@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+/* General styling for the section */
+.infosection-section {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically */
+    gap: 30px;               /* Space between the columns */
+    padding: 50px;           /* Add padding around the section */
+    flex-wrap: wrap;         /* Allows wrapping on smaller screens */
+    background-color: #AAB396;
+}
+
+/* Left Column Styling */
+.infosection-left-column {
+    flex: 1;
+    max-width: 800px;       /* Limit the width of the left column */
+    padding-right: 30px;    /* Space between text and image */
+}
+
+/* Header Section */
+.infosection-header {
+    margin-bottom: 20px;
+    font-family: "Cinzel", serif;
+}
+
+.infosection-title {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+/* Line Divider Styling */
+.line-divider {
+    width: 90%;            /* Make the divider span the full width of its container */
+    height: 1.2px;            /* Set the height of the line */
+    background-color: #000; /* Set the color of the divider line (black) */
+    margin: 20px 0;         /* Add space above and below the line */
+}
+
+.infosection-description {
+    font-size: 18px;
+    color: #000000;
+    
+}
+
+/* Content Section */
+.infosection-content {
+    margin-top: 20px;
+    font-family: "Cinzel", serif;
+
+}
+
+/* Subtitle and Text Styling */
+.infosection-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.infosection-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Right Column (Image Section) */
+.infosection-image-container {
+    flex: 1;
+    max-width: 600px; /* Limits the width of the right column */
+    text-align: center; /* Centers the image */
+}
+
+.infosection-image {
+    display: inline-block;
+    max-width: 100%;      /* Ensures the image doesn't overflow */
+    height: auto;        /* Set a specific height for the image */
+    object-fit: cover;    /* Ensures the image fills the container while preserving aspect ratio */
+}
+
+.infosection-img {
+    border-radius: 8px;   /* Rounded corners for the image */
+    height: 580px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .infosection-section {
+        flex-direction: column; /* Stacks the columns vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .infosection-left-column,
+    .infosection-image-container {
+        max-width: 100%; /* Allow columns to take full width */
+    }
+
+    .infosection-title {
+        font-size: 28px; /* Smaller title on smaller screens */
+    }
+
+    .infosection-subtitle {
+        font-size: 20px; /* Smaller subtitle on smaller screens */
+    }
+
+    .infosection-text {
+        font-size: 14px; /* Smaller text on smaller screens */
+    }
+}
