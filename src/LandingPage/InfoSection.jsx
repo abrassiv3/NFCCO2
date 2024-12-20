@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "/home/user/nfcco/src/assets/logo/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
+import icon from "../assets/logo/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 import "./InfoSection.css";
 import woman from "../assets/_KGP6196.JPG";
 import icon1 from "../assets/logo/target_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
