@@ -3,18 +3,20 @@
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
     width: 100%;
     background-color: #AAB396; /* Light background for contrast */
+    flex-direction: column;
 }
 
 .gallery-preview-left-side {
     flex: 6; /* Covers 70% of the width */
     display: flex;
-    justify-content: space-between; /* Ensures equal spacing between divs */
     padding: 70px;
+    justify-content: center;
     flex-wrap: wrap; /* Enables wrapping of divs on smaller screens */
+    gap: 9rem;
 }
 
 .gallery-preview-left-side > div {
-    width: 30%; /* Each div takes up one-third of the left side's width */
+    width: 20%; /* Each div takes up one-third of the left side's width */
     height: 650px; /* Set a fixed height for the divs */
     display: flex; /* Enables centering of text */
     align-items: center; /* Vertical centering */

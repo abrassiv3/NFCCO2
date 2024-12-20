@@ -1,0 +1,66 @@
+/* Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+.map-container {
+    /* Set the background image */
+    background-image: url('/home/user/nfcco/src/assets/pexels-joe-arts-1830507-3505000.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: flex-start; /* Align the text at the bottom */
+    align-items: flex-end;
+    padding: 20px; /* Optional padding to adjust the spacing */
+}
+
+.text-container {
+    text-align: left;
+    color: white; /* White text for better contrast */
+    z-index: 1; 
+    padding-left: 2rem;
+    font-family: 'Cormorant Garamond';
+}
+
+.welcome-text {
+    font-size: 6rem; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+.ndoto-text {
+    font-size: 9rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 10px; /* Add spacing between the two lines */
+}
+
+
+/* Mobile responsive styling */
+@media (max-width: 1150px) {
+    .map-container {
+        height: 80vh; /* Adjust the height for tablets and mobile screens */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .welcome-text {
+        font-size: 1.5rem; /* Adjust text size for smaller screens */
+    }
+
+    .ndoto-text {
+        font-size: 2.5rem; /* Adjust text size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: 70vh; /* Further reduce the height for small mobile screens */
+        padding: 10px; /* Reduce padding for mobile screens */
+    }
+
+    .welcome-text {
+        font-size: 1.25rem; /* Further adjust text size for mobile screens */
+    }
+
+    .ndoto-text {
+        font-size: 2rem; /* Further adjust text size for mobile screens */
+    }
+}
