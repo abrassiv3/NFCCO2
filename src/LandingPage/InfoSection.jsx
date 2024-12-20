@@ -1,10 +1,10 @@
 import React from "react";
 import icon from "/home/user/nfcco/src/assets/logo/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 import "./InfoSection.css";
-import woman from "/home/user/nfcco/src/assets/_KGP6196.JPG";
-import icon1 from "/home/user/nfcco/src/assets/logo/target_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
-import icon2 from "/home/user/nfcco/src/assets/logo/emoji_objects_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
-import icon3 from "/home/user/nfcco/src/assets/logo/volunteer_activism_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
+import woman from "../assets/_KGP6196.JPG";
+import icon1 from "../assets/logo/target_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
+import icon2 from "../assets/logo/emoji_objects_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
+import icon3 from "../assets/logo/volunteer_activism_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 
 
 function InfoSection() {

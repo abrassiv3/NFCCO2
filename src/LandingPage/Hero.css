@@ -2,65 +2,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-.map-container {
-    /* Set the background image */
-    background-image: url('/home/user/nfcco/src/assets/pexels-joe-arts-1830507-3505000.jpg'); /* Replace with the actual path to your image */
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Stack top and bottom vertically */
+    height: 100vh;
+    padding: 20px;
+    background-image: url('../assets/pexels-joe-arts-1830507-3505000.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full height of the viewport */
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/* Top Section */
+.hero-top-side {
     display: flex;
-    justify-content: flex-start; /* Align the text at the bottom */
-    align-items: flex-end;
-    padding: 20px; /* Optional padding to adjust the spacing */
-}
-
-.text-container {
+    flex-direction: row;
     text-align: left;
-    color: white; /* White text for better contrast */
-    z-index: 1; 
-    padding-left: 2rem;
-    font-family: 'Cormorant Garamond';
+    gap: 20px; /* Adjust spacing between the sections */
+    border-radius: 10px;
+    height: auto;
+    font-family: "Jost", serif;
+    /* background-color: #e6b800; */
+}
+.hero-top-side-top {
+    flex: 7; /* 70% of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 5rem;
+    padding-left: 3rem;
+    padding-top: 10rem;
+
 }
 
-.welcome-text {
-    font-size: 6rem; /* Adjust font size as needed */
-    font-weight: bold;
+/* Title Styling */
+.hero-title h1 {
+    font-size: 9rem;
+    line-height: 1.2;
+    margin: 0;
 }
 
-.ndoto-text {
-    font-size: 9rem; /* Adjust font size as needed */
-    font-weight: bold;
-    margin-top: 10px; /* Add spacing between the two lines */
+/* Text Styling */
+.hero-text p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 
-/* Mobile responsive styling */
-@media (max-width: 1150px) {
-    .map-container {
-        height: 80vh; /* Adjust the height for tablets and mobile screens */
-        padding: 15px; /* Reduce padding on smaller screens */
+/* Square Container */
+.topside-square {
+    display: flex;
+    flex: 3; /* 30% of the width */
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    padding-top: 7rem;
+}
+
+/* Actual Square Styling */
+.actual-square {
+    display: flex;
+    flex-direction: column;
+    width: 550px; /* Adjust the size of the inner square */
+    height: 250px;
+    background-color: transparent; /* Transparent background */
+    border: 3px solid #ffffff; /* White border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for a stylish effect */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    backdrop-filter: blur(10px); /* Apply blur to the background for a glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+/* Buttons */
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.about-us-button {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.explore-us-button {
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.about-us-button:hover, .explore-us-button:hover {
+    transform: scale(1.05);
+    background-color: #e6b800;
+}
+
+@media (max-width: 1400px) {
+    .hero-container {
+        padding: 10px;
     }
 
-    .welcome-text {
-        font-size: 1.5rem; /* Adjust text size for smaller screens */
+    .hero-top-side {
+        flex-direction: column; /* Stack top and bottom sections vertically */
+        align-items: center; /* Center content */
     }
 
-    .ndoto-text {
-        font-size: 2.5rem; /* Adjust text size for smaller screens */
+    .hero-top-side-top {
+        padding: 2rem;
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
+
+    /* Adjust Title Size */
+    .hero-title h1 {
+        font-size: 5rem;
+    }
+
+    /* Adjust Text Size */
+    .hero-text p {
+        font-size: 1.3rem;
+    }
+
+    /* Hide Top Side Square on Small Screens */
+    .topside-square {
+        display: none; /* Hide the square container */
+    }
+    
+    /* Button Font Size for Small Screens */
+    .buttons button {
+        font-size: 1.4rem;
     }
 }
 
+/* For very small screens (mobile portrait), further adjustments */
 @media (max-width: 480px) {
-    .map-container {
-        height: 70vh; /* Further reduce the height for small mobile screens */
-        padding: 10px; /* Reduce padding for mobile screens */
+    .hero-title h1 {
+        font-size: 3.5rem; /* Reduce font size for very small screens */
     }
 
-    .welcome-text {
-        font-size: 1.25rem; /* Further adjust text size for mobile screens */
+    .hero-text p {
+        font-size: 1.1rem; /* Adjust text size */
     }
 
-    .ndoto-text {
-        font-size: 2rem; /* Further adjust text size for mobile screens */
+    .buttons button {
+        padding: 8px 15px;
+        font-size: 1.2rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+

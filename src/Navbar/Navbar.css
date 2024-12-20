@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  /* Left Section: Logo and Title */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Center Section: Links */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #ff9800;
+  }
+  
+  /* Right Section: Menu and Search */
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-search, .navbar-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar-search:hover, .navbar-menu:hover {
+    color: #ff9800;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none; /* Hide links on smaller screens */
+    }
+  
+    .navbar-menu {
+      display: block;
+    }
+  }
+  

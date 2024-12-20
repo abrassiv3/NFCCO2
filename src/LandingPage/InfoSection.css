@@ -176,3 +176,74 @@
     color: #666;
     margin-top: 8px;
 }
+
+
+
+
+
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 1580px) {
+    .top-side {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .top-side-left {
+        font-size: 1.5rem;
+    }
+
+    .top-side-right {
+        align-items: center;
+    }
+
+    .top-side-right section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom-side-top h1 {
+        font-size: 2.5rem;
+    }
+
+    .bottom-side-top button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .bottom-side-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .woman-image {
+        width: 80%;
+        height: auto;
+    }
+
+    .cards-container {
+        width: 100%;
+        grid-template-columns: 1fr; /* Stack the cards on small screens */
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bottom-side-top h1 {
+        font-size: 2rem;
+    }
+
+    .bottom-side-top button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .woman-image {
+        width: 100%;
+    }
+}

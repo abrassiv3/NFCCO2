@@ -1,7 +1,5 @@
 import React from "react";
 import InfoSection from "./InfoSection";
-import MapPreview from "./MapPreview";
-import GalleryPreview from "./GalleryPreview";
 import Hero from "./Hero";
 
 
