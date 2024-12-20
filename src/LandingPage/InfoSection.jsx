@@ -11,7 +11,7 @@ function InfoSection() {
     const cards = [
         {
             title: "Vision",
-            description: "Our vision is to enhance community resilience to climate shocks through restoration and afforestation of Ndoto and Nyiro forests, supporting sustainable livelihoods. Together, we aim to safeguard biodiversity, mitigate climate change impacts, and foster a future of environmental sustainability.",
+            description: "Our vision vision is to enhance community resilience to climate shocks through restoration and afforestation of Ndoto and Nyiro forests, supporting sustainable livelihoods. Together, we aim to safeguard biodiversity, mitigate climate change impacts, and foster a future of environmental sustainability.",
             image: icon 
         },
         {
