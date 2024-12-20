@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "/home/user/nfcco/src/assets/logo/nobg_image1-0_copy_1.png"; // Replace with the actual path to your logo image
+import logo from "../assets/logo/nobg_image1-0_copy_1.png"; // Replace with the actual path to your logo image
 
 function Navbar() {
   return (
