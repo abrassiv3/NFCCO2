@@ -1,0 +1,212 @@
+.blog-preview {
+    background-color: #FAFBF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-previe-top {
+    display: flex;
+    justify-content: space-between; /* This ensures that the content is spaced out */
+    align-items: center; /* This centers the items vertically */
+    width: 100%; /* Ensure it takes up the full width */
+    padding: 2rem;
+    padding-left: 6rem;
+    font-family: "Jost", serif;
+  }
+  
+  .blog-previe-top p {
+    font-size: 2rem;
+  }
+
+  .blog-previe-top button {
+    font-size: 2rem;
+    padding-right: 6rem;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+
+  }
+
+.blog-preview-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    padding-left: 8rem;
+    font-family: "Jost", serif;
+
+  }
+  
+  .blog-card {
+    position: relative;
+    width: 200px;
+    height: 800px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensure content doesn't overflow card */
+  }
+  
+  .blog-card-large {
+    width: 450px; /* Larger width for the first or hovered card */
+  }
+  
+  .blog-card-small {
+    width: 250px; /* Smaller width for the other cards */
+  }
+  
+  .blog-card-image {
+    width: 100%;
+    height: 100%; /* Make the image container take up the whole card height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #ddd; /* Fallback color if image doesn't load */
+    position: relative; /* Position the content and icon inside this container */
+  }
+  
+  .northeast-icon {
+    position: absolute;
+    top: 15px;  /* Adjusted for more space from the top */
+    right: 15px;  /* Adjusted for more space from the right */
+    width: 50px; /* Icon size */
+    height: 50px; /* Icon size */
+    background-color: #ffffff;
+    padding: px; /* Optional: Add padding inside the icon */
+    margin: 1.5rem;
+    border-radius: 50%; /* Optional: Add border radius for rounded corners */
+  }
+  
+  
+  .blog-card-content {
+    padding: 2rem;
+    position: absolute;
+    bottom: 10px; /* Position content towards the bottom */
+    left: 10px;
+    right: 10px;
+    text-align: left;
+    color: white; /* Make text white to stand out on the image */
+  }
+  
+  .blog-card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add text shadow for better visibility */
+    text-transform: uppercase;
+  }
+  
+  .blog-card-summary {
+    font-size: 1.5rem;
+    color: #ddd; /* Lighter color for the summary */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better visibility */
+  }
+  
+  .hide-summary {
+    display: none;
+  }
+  
+  .show-summary {
+    display: block;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .blog-previe-top {
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .blog-previe-top p {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .blog-previe-top button {
+        font-size: 1.2rem;
+        padding-right: 2rem;
+    }
+
+    .blog-preview-container {
+        padding: 2rem;
+        gap: 15px;
+    }
+
+    .blog-card {
+        width: 100%; /* Full width for all cards on smaller devices */
+        height: 300px;
+    }
+
+    .blog-card-large,
+    .blog-card-small {
+        width: 100%; /* Ensure the cards fill the container width */
+    }
+
+    .blog-card-image {
+        height: 50%;
+    }
+
+    .northeast-icon {
+        width: 35px; /* Smaller icon for mobile */
+        height: 35px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .blog-card-title {
+        font-size: 1.2rem; /* Smaller title font size */
+    }
+
+    .blog-card-summary {
+        font-size: 1rem; /* Smaller summary font size */
+    }
+}
+
+/* Media Query for Very Small Devices (Phones in Portrait Mode) */
+@media (max-width: 480px) {
+    .blog-previe-top {
+        flex-direction: column; /* Stack elements vertically on very small screens */
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    .blog-previe-top p {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .blog-previe-top button {
+        font-size: 1rem;
+        padding-right: 0;
+        margin-top: 1rem;
+    }
+
+    .blog-preview-container {
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .blog-card {
+        width: 100%;
+        height: 280px; /* Adjust height for very small screens */
+    }
+
+    .northeast-icon {
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .blog-card-title {
+        font-size: 1.1rem; /* Smaller font size */
+    }
+
+    .blog-card-summary {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
