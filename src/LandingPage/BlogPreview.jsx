@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./BlogPreview.css"; 
-import image1 from "/home/user/nfcco/src/assets/_KGP6807.JPG";
-import image2 from "/home/user/nfcco/src/assets/_KGP6384.JPG";
-import image3 from "/home/user/nfcco/src/assets/pexels-thu-trang-1190570-2265090.jpg";
-import image4 from "/home/user/nfcco/src/assets/_KGP6196.JPG";
-import northeast from "/home/user/nfcco/src/assets/logo/north_east_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
+import image1 from "../assets/_KGP6807.JPG";
+import image2 from "../assets/_KGP5985.JPG";
+import image3 from "../assets/pexels-thu-trang-1190570-2265090.jpg";
+import image4 from "../assets/_KGP6196.JPG";
+import northeast from "../assets/logo/north_east_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 
 const conservancyArticles = [
   {

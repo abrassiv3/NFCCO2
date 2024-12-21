@@ -19,12 +19,12 @@ function Hero() {
                         <button className="explore-us-button">Explore Us</button>
                     </div>
                 </div>
-                <div className="topside-square">
+                {/* <div className="topside-square">
                     <div className="actual-square">
                         <p>500+</p>
                         <p>Satisfied clients</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
