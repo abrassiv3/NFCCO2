@@ -1,0 +1,91 @@
+.tenets {
+    display: flex;
+    flex-direction: column;
+    background-color: #AAB396;
+    padding: 2rem;
+    gap: 3rem;
+    font-family: "Jost", serif;
+}
+.tenets-top {
+    display: flex; /* Align children side by side */
+    justify-content: space-between; /* Space out title and list */
+    align-items: flex-start; /* Align title and list to the top */
+    gap: 2rem; /* Add space between title and list */
+    font-family: "Jost", serif;
+
+}
+.tenets-top-title {
+    flex: 1; /* Allow title to take available space */
+}
+.tenets-list-item  {
+    gap: 100px;
+}
+
+.tenets-top h2 {
+    font-size: 2rem;
+}
+
+.tenets-top-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Uniform spacing between list items */
+    margin-top: 20px;
+}
+
+.tenets-list-item {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between title and number */
+    align-items: center; /* Vertically aligns content */
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #333; /* Underline for each item */
+    padding-bottom: 5px; /* Space between text and underline */
+}
+
+.tenets-list-title {
+    flex-grow: 1; /* Makes sure titles take available space */
+}
+
+.tenets-list-number {
+    margin-left: 20px; /* Adds consistent spacing from the title */
+    color: #555; /* Subtle color for numbers */
+    font-size: 16px;
+}
+
+
+
+
+
+.tenet-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    gap: 2rem;
+}
+
+.tenet-card img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tenet-card img:hover {
+    transform: scale(1.05);
+}
+
+.tenet-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333; /* Example color */
+}
+
+.tenets-bottom-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+
+}
