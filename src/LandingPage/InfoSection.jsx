@@ -11,25 +11,26 @@ function InfoSection() {
     const cards = [
         {
             title: "Vision",
-            description: "Our vision vision is to enhance community resilience to climate shocks through restoration and afforestation of Ndoto and Nyiro forests, supporting sustainable livelihoods. Together, we aim to safeguard biodiversity, mitigate climate change impacts, and foster a future of environmental sustainability.",
+            description: "To enhance community resilience through restoration, afforestation, safeguarding biodiversity, and promoting environmental sustainability.",
             image: icon 
         },
         {
             title: "Mission",
-            description: "To conserve the ecological integrity and community livelihoods of Ndoto and Nyiro forests.",
+            description: "To conserve the ecological integrity and livelihoods of Ndoto and Nyiro forests sustainably and collaboratively.",
             image: icon1 
         },
         {
             title: "Main objective",
-            description: "To conserve the ecological integrity and community livelihoods of Ndoto and Nyiro forests.\n\nMain objective\n\nThe main project objective is combating climate change through increasing forest cover via afforestation and introducing other environmental conservation activities in the community. These activities will both conserve the environment and promote the sustainable use of natural resources, generating income for the community surrounding Ndoto Forest, who will be part of the conservation activities.",
+            description: "Increase forest cover through afforestation, conservation activities, and promoting sustainable resource use for community benefits.",
             image: icon2 
         },
         {
             title: "Values",
-            description: "Our core value lies in empowering communities to protect and restore their local environment through collaborative, sustainable practices.",
+            description: "Empowering communities to restore and protect their environment through sustainable and collaborative conservation practices.",
             image: icon3 
         }
     ];
+
     
     
     return (

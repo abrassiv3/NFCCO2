@@ -23,6 +23,7 @@
   .gallery-preview-top h1{
     font-size: 5rem;
     font-weight: 500;
+    color: rgb(107, 115, 122);
   }
 
   .gallery-preview-top .highlight {

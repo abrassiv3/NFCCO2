@@ -12,12 +12,12 @@ import GalleryPreview from "./GalleryPreview";
 function LandingPage () {
     return (
         <div>
-            <Hero/>
+            {/* <Hero/> */}
             <InfoSection/>
-            <Tenets/>
+            {/* <Tenets/>
             <BlogPreview/>
             <Testimonial/>
-            <GalleryPreview/>
+            <GalleryPreview/> */}
 
         </div>
     )

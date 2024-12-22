@@ -180,10 +180,183 @@
 
 
 
+/* Small screens (up to 600px) */
+@media screen and (max-width: 600px) {
+    .top-side {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .top-side-left {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .top-side-right {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .top-side-right section {
+        gap: 2rem;
+        font-size: 1rem;
+    }
+
+    .underline {
+        width: 100%;
+    }
+
+    .bottom-side {
+        padding: 2rem;
+    }
+
+    .bottom-side-top h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bottom-side-top button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .bottom-side-bottom {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .woman-image {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; /* One card per row */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-description {
+        font-size: 1rem;
+    }
+}
+
+/* Medium screens (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .top-side {
+        padding: 4rem;
+    }
+
+    .top-side-left {
+        font-size: 1.5rem;
+    }
+
+    .top-side-right section {
+        gap: 3rem;
+    }
+
+    .bottom-side {
+        padding: 4rem;
+    }
+
+    .bottom-side-top h1 {
+        font-size: 3rem;
+    }
+
+    .bottom-side-bottom {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .woman-image {
+        width: 50%;
+        height: auto;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 15px;
+        width: 100%;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .card-description {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large screens (1025px and up) */
+@media screen and (min-width: 1025px) {
+    .top-side {
+        padding: 6rem;
+    }
+
+    .top-side-left {
+        font-size: 2rem;
+    }
+
+    .top-side-right section {
+        gap: 5rem;
+    }
+
+    .bottom-side {
+        padding: 6rem;
+    }
+
+    .bottom-side-top h1 {
+        font-size: 4rem;
+    }
+
+    .bottom-side-bottom {
+        flex-direction: row;
+        gap: 8rem;
+    }
+
+    .woman-image {
+        width: 25%;
+        height: 700px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 20px;
+    }
+
+    .card {
+        height: 350px;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-description {
+        font-size: 1.5rem;
+    }
+}
 
 
-/* Media Queries for Mobile Devices */
-@media screen and (max-width: 1580px) {
+
+/* Medium Screens (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .top-side {
         flex-direction: column;
         padding: 2rem;
@@ -194,56 +367,120 @@
     }
 
     .top-side-right {
-        align-items: center;
+        font-size: 1.2rem;
     }
 
-    .top-side-right section {
-        flex-direction: column;
-        align-items: flex-start;
+    .underline {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .bottom-side {
+        padding: 3rem;
     }
 
     .bottom-side-top h1 {
         font-size: 2.5rem;
+        text-align: center;
     }
 
     .bottom-side-top button {
         width: 100%;
-        padding: 12px;
+        font-size: 1.2rem;
     }
 
     .bottom-side-bottom {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
     }
 
     .woman-image {
-        width: 80%;
+        width: 50%;
         height: auto;
     }
 
     .cards-container {
-        width: 100%;
-        grid-template-columns: 1fr; /* Stack the cards on small screens */
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 2rem;
     }
 
     .card {
         width: 100%;
         height: auto;
     }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .card-description {
+        font-size: 1.2rem;
+    }
 }
 
-@media screen and (max-width: 480px) {
-    .bottom-side-top h1 {
+
+/* Large Screens (1025px and above) */
+@media screen and (min-width: 1025px) and (max-width: 1624px){
+    .top-side {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+
+    .top-side-left {
         font-size: 2rem;
+        width: 40%;
+    }
+
+    .top-side-right {
+        font-size: 1.5rem;
+        width: 55%;
+    }
+
+    .underline {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bottom-side {
+        padding: 5rem;
+    }
+
+    .bottom-side-top h1 {
+        font-size: 3.5rem;
+        text-align: center;
     }
 
     .bottom-side-top button {
-        padding: 10px;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+    }
+
+    .bottom-side-bottom {
+        flex-direction: row;
+        gap: 5rem;
     }
 
     .woman-image {
+        width: 30%;
+        height: 500px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+        gap: 2rem;
+    }
+
+    .card {
         width: 100%;
+        height: 400px;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-description {
+        font-size: 1.5rem;
     }
 }
