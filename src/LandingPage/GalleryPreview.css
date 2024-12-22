@@ -1,157 +1,114 @@
 .gallery-preview {
+    position: relative;
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    width: 100%;
-    background-color: #AAB396; /* Light background for contrast */
     flex-direction: column;
-}
-
-.gallery-preview-left-side {
-    flex: 6; /* Covers 70% of the width */
-    display: flex;
-    padding: 70px;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Enables wrapping of divs on smaller screens */
-    gap: 9rem;
-}
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    font-family: "Jost", serif;
+  }
 
-.gallery-preview-left-side > div {
-    width: 20%; /* Each div takes up one-third of the left side's width */
-    height: 650px; /* Set a fixed height for the divs */
-    display: flex; /* Enables centering of text */
-    align-items: center; /* Vertical centering */
-    justify-content: center; /* Horizontal centering */
-    position: relative; /* For positioning the pseudo-element */
-    background-color: #F7EED3; /* Default background color */
-    overflow: hidden; /* Ensures the image doesn't spill out */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow */
-    margin-bottom: 20px; /* Add spacing between divs when stacked */
-}
-
-.gallery-preview-left-side > div::before {
-    content: ""; /* Required for pseudo-element */
-    position: absolute; /* Positioned relative to the parent div */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the image */
-    opacity: 0; /* Initially invisible */
-    transform: scale(1.1); /* Slightly zoomed out */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions */
-    z-index: 1; /* Place behind the text */
-}
-
-.gallery-preview-left-side > div:hover::before {
-    opacity: 1; /* Reveal the image */
-    transform: scale(1); /* Smooth zoom effect to normal size */
-}
-
-.gallery-preview-left-side > div p {
-    transform: rotate(270deg); /* Rotates the text by 90 degrees */
-    font-family: "Cinzel", serif;
-    font-size: 4.5rem; /* Adjust font size */
-    color: #333; /* Default text color */
-    margin: 0; /* Removes default margin */
-    position: relative; /* Ensures text stays centered */
-    z-index: 2; /* Keeps text above the image */
-    transition: color 0.5s ease; /* Smooth transition for text color */
-}
-
-.gallery-preview-left-side > div:hover p {
-    color: #fff; /* Change text color to white when hovered */
-}
-
-/* Specific Background Images for Each Div */
-.divs-1:nth-child(1)::before {
-    background-image: url('../assets/_KGP6807.JPG'); /* Community Image */
-}
-
-.divs-1:nth-child(2)::before {
-    background-image: url('../assets/PHOTO-2024-08-03-09-18-27 (3).jpg'); /* Species Image */
-}
-
-.divs-1:nth-child(3)::before {
-    background-image: url('../assets/_KGP5985 (1).JPG'); /* Landscape Image */
-}
-.gallery-preview-right-side {
-    flex: 4; /* Covers 30% of the width */
-    padding: 70px;
+  .gallery-preview-top {
     display: flex;
-    flex-direction: column;
-}
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .gallery-preview-top h1{
+    font-size: 5rem;
+    font-weight: 500;
+  }
 
-.gallery-preview-right-side h2 {
-    font-family: "Cinzel", serif;
-    font-size: 6rem;
-}
+  .gallery-preview-top .highlight {
+    background-image: linear-gradient(to right, #6a4e23, #4b9f66); /* Brownish-green gradient */
+    -webkit-background-clip: text; /* Ensure the gradient applies to text */
+    color: transparent; /* Make text color transparent so the gradient shows */
+  }
+  
 
-.gallery-preview-right-side h3 {
-    font-family: "Cinzel", serif;
-}
+  .gallery-preview-top button{
+    font-size: 2rem;
+  }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 1024px) {
-    .gallery-preview-left-side > div {
-        width: 45%; /* Adjust width for medium screens */
-        height: 400px; /* Reduce height for better spacing */
-    }
 
-    .gallery-preview-right-side h2 {
-        font-size: 4rem; /* Adjust font size */
-    }
 
-    .gallery-preview-right-side h3 {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-}
 
-@media (max-width: 768px) {
-    .gallery-preview {
-        flex-direction: column; /* Stack content vertically */
-    }
 
-    .gallery-preview-left-side {
-        flex-direction: row;
-        flex-wrap: wrap; /* Ensure divs wrap properly */
-        justify-content: center;
-    }
 
-    .gallery-preview-left-side > div {
-        width: 80%; /* Take up more space for smaller screens */
-        height: 300px; /* Adjust height */
-        margin-bottom: 20px; /* Add spacing between stacked divs */
-    }
 
-    .gallery-preview-right-side {
-        padding: 20px;
-        text-align: center; /* Center-align text for smaller screens */
-    }
 
-    .gallery-preview-right-side h2 {
-        font-size: 3rem;
-    }
 
-    .gallery-preview-right-side h3 {
-        font-size: 1.2rem;
-    }
-}
 
-@media (max-width: 480px) {
-    .divs-1 p {
-        font-size: 1.2rem; /* Smaller font size for extra small screens */
-    }
 
-    .gallery-preview-left-side > div {
-        height: 200px; /* Reduce height further for smaller devices */
-    }
 
-    .gallery-preview-right-side h2 {
-        font-size: 2.5rem;
-    }
 
-    .gallery-preview-right-side h3 {
-        font-size: 1rem;
-    }
-}
+
+
+
+
+  .gallery-images {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 6rem;
+  }
+  
+  .current-image {
+    width: 70%;
+    height: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    object-fit: cover;
+  }
+  
+  .next-image-container {
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .next-image {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    opacity: 0.5;
+    transform: translateX(20%);
+    z-index: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .next-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; /* Button width */
+    height: 150px; /* Button height */
+    font-size: 1.8rem; /* Font size inside the button */
+    color: rgb(83, 80, 80);
+    background-color: transparent;
+    border: 2px solid rgb(83, 80, 80); /* Add a solid black border with 5px thickness */
+    border-radius: 50%; /* Makes the button a circle */
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    border-color: white; /* Change border color on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* Slight scale effect on hover */
+  }
+  

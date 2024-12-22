@@ -6,9 +6,9 @@ import "./Tenets.css";
 
 function Tenets() {
     const tenets = [
-        { id: 1, src: Tenet1, title: "PEOPLE", alt: "Tenet 1 description" },
-        { id: 2, src: Tenet2, title: "ECOLOGY", alt: "Tenet 2 description" },
-        { id: 3, src: Tenet3, title: "COMMUNITY", alt: "Tenet 3 description" },
+        { id: 1, src: Tenet1, title: "People", alt: "Tenet 1 description" },
+        { id: 2, src: Tenet2, title: "Ecology", alt: "Tenet 2 description" },
+        { id: 3, src: Tenet3, title: "Community", alt: "Tenet 3 description" },
     ];
 
     return (

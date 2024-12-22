@@ -16,6 +16,7 @@
 }
 .tenets-top-title {
     flex: 1; /* Allow title to take available space */
+    padding-left: 5rem;
 }
 .tenets-list-item  {
     gap: 100px;
@@ -80,6 +81,7 @@
     font-size: 18px;
     font-weight: 600;
     color: #333; /* Example color */
+    text-transform: uppercase;
 }
 
 .tenets-bottom-cards {

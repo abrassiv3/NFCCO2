@@ -1,29 +1,52 @@
-import React from "react";
-import Landscape from "../assets/_KGP5985 (1).JPG";
-import Species from "../assets/PHOTO-2024-08-03-09-18-27 (3).jpg";
-import Community from "../assets/_KGP6807.JPG";
+import React, { useState } from "react";
 import "./GalleryPreview.css";
 
-function GalleryPreview() {
+import image1 from "../assets/_KGP5985.JPG";
+import image2 from "../assets/_KGP6196.JPG";
+import image3 from "../assets/_KGP6384.JPG";
+import image4 from "../assets/pexels-joe-arts-1830507-3505000.jpg";
+import image5 from "../assets/pexels-thu-trang-1190570-2265090.jpg";
+
+const images = [image1, image2, image3, image4, image5];
+
+const GalleryPreview = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const nextIndex = (currentIndex + 1) % images.length;
+
   return (
     <div className="gallery-preview">
-      <div className="gallery-preview-left-side">
-        <div className="divs-1">
-            <p>Community</p>
-        </div>
-        <div className="divs-1">
-            <p>Species</p>
-        </div>
-        <div className="divs-1">
-            <p>Landscape</p>
-        </div>
+      <div className="gallery-preview-top">
+        <h1>
+          GET TO <span className="highlight">KNOW</span> OUR <br />
+          LATEST FOREST <span className="highlight">WORKS</span>
+        </h1>
+        <button>[ View Gallery ]</button>
       </div>
-      <div className="gallery-preview-right-side">
-        <h2>See for yourself</h2>
-        <h3>This is just a small sentence to introduce our vast and awsome gallery page.Dig in to explore Ndoto Forest</h3>
+
+      <div className="gallery-images">
+        <img
+          src={images[currentIndex]}
+          alt={`Current ${currentIndex}`}
+          className="current-image"
+        />
+        <div className="next-image-container">
+          <img
+            src={images[nextIndex]}
+            alt={`Next ${nextIndex}`}
+            className="next-image"
+          />
+          <button className="next-button" onClick={handleNext}>
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default GalleryPreview;
