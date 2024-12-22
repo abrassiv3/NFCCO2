@@ -14,8 +14,8 @@ function LandingPage () {
         <div>
             {/* <Hero/> */}
             <InfoSection/>
-            {/* <Tenets/>
-            <BlogPreview/>
+            <Tenets/>
+            {/* <BlogPreview/>
             <Testimonial/>
             <GalleryPreview/> */}
 
