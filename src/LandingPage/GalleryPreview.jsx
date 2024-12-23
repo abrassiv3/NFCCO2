@@ -47,7 +47,10 @@ const GalleryPreview = () => {
       </div>
       {/* mobile */}
       <div className="horizontal-scroll-container">
-      <h1 className="header">Gallery</h1>
+      <h1 className="header">
+      GET TO <span className="header-highlight">SEE</span> OUR <br />
+      LATEST FOREST <span className="header-highlight">WORKS</span>
+      </h1>
       <div className="scroll-area">
         <div className="scroll-content">
           <img src={image1} alt="Image 1" className="scroll-image" />
