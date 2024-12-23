@@ -113,3 +113,53 @@
     transform: translate(-50%, -50%) scale(1.1); /* Slight scale effect on hover */
   }
   
+
+
+
+  .horizontal-scroll-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .scroll-area {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .scroll-content {
+    display: inline-flex;
+    gap: 10px;
+  }
+  
+  .scroll-image {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .gallery-images {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1030px) {
+    .horizontal-scroll-container {
+      display: none;
+    }
+  }
+  

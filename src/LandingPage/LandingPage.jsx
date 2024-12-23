@@ -6,18 +6,20 @@ import Tenets from "./Tenets";
 import Testimonial from "./Testimonial";
 import Footer from "../Footer/Footer";
 import GalleryPreview from "./GalleryPreview";
+import ConservancyArticles from "./MapPreview";
 
 
 
 function LandingPage () {
     return (
         <div>
-            {/* <Hero/> */}
+            <Hero/>
             <InfoSection/>
             <Tenets/>
-            {/* <BlogPreview/>
+            <BlogPreview/>
             <Testimonial/>
-            <GalleryPreview/> */}
+            <GalleryPreview/>
+            {/* <ConservancyArticles/> */}
 
         </div>
     )

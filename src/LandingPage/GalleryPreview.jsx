@@ -22,7 +22,7 @@ const GalleryPreview = () => {
     <div className="gallery-preview">
       <div className="gallery-preview-top">
         <h1>
-          GET TO <span className="highlight">KNOW</span> OUR <br />
+          GET TO <span className="highlight">SEE</span> OUR <br />
           LATEST FOREST <span className="highlight">WORKS</span>
         </h1>
         <button>[ View Gallery ]</button>
@@ -45,6 +45,18 @@ const GalleryPreview = () => {
           </button>
         </div>
       </div>
+      {/* mobile */}
+      <div className="horizontal-scroll-container">
+      <h1 className="header">Gallery</h1>
+      <div className="scroll-area">
+        <div className="scroll-content">
+          <img src={image1} alt="Image 1" className="scroll-image" />
+          <img src={image2} alt="Image 2" className="scroll-image" />
+          <img src={image3} alt="Image 3" className="scroll-image" />
+          <img src={image4} alt="Image 4" className="scroll-image" />
+        </div>
+      </div>
+    </div>
     </div>
   );
 };

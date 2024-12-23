@@ -9,7 +9,7 @@ function Hero() {
             <div className="hero-top-side">
                 <div className="hero-top-side-top">
                     <div className="hero-title">
-                        <h1>WELCOME TO <br />NDOTO FOREST</h1>
+                        <h1>WELCOME TO <br />NDOTO FOREST COMMUNITY</h1>
                     </div>
                     <div className="hero-text">
                         <p>To conserve the ecological integrity and community livelihoods of Ndoto and Nyiro forests tTo conserve the ecological integrity and community livelihoods of Ndoto and Nyiro forests.</p>
