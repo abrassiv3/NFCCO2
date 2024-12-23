@@ -29,7 +29,7 @@ const GalleryPreview = () => {
       </div>
 
       <div className="gallery-images">
-        <img
+        <img 
           src={images[currentIndex]}
           alt={`Current ${currentIndex}`}
           className="current-image"
