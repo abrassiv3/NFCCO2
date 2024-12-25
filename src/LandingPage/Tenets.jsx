@@ -31,7 +31,7 @@ function Tenets() {
                 <div className="tenets-bottom-cards">
                     {tenets.map((tenet) => (
                         <div key={tenet.id} className="tenet-card">
-                            <img src={tenet.src} alt={tenet.alt} />
+                            <img src={tenet.src} alt={tenet.alt} loading="lazy" />
                             <h3 className="tenet-title">{tenet.title}</h3>
                         </div>
                     ))}
