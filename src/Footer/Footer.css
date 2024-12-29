@@ -1,0 +1,182 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #AAB396;
+    font-family: "Jost", serif;
+    gap: 6rem;
+
+}
+.top-footer {
+    display: flex;
+    width: 100%;
+}
+.top-left-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.top-left-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 6rem;
+    padding-top: 6rem;
+    gap: 2rem;
+    text-align: center; 
+}
+
+
+.top-left-top img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-underline {
+    width: 2.5px;
+    height: 50px;
+    background-color: #000000; 
+    margin: 5px 0;
+}
+
+.top-left-top h1 {
+    font-size: 4rem;
+    font-weight: 350;
+}
+
+.top-left-top p {
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    color: #000; /* Add color if needed */
+}
+
+
+.top-left-top img {
+    width: 80px;
+    height: 80px;
+}
+.footer-underline {
+    width: 2.5px;
+    height: 50px;
+    margin: 5px 0;
+
+}
+.top-left-top h1 {
+    font-size: 4rem;
+    font-weight: 350;
+}
+
+.top-left-bottom {
+    padding-left: 6rem;
+}
+
+.top-left-bottom-button {
+    background-color: #f8f9fa;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+.top-left-bottom-button form{
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+
+.top-left-bottom-button-pointer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgb(211, 218, 224);
+    width: 50px; /* Ensure the circle has a consistent size */
+    height: 50px; /* Ensure the circle has a consistent size */
+    border-radius: 50%; /* Create the circular shape */
+    padding: 0; /* Remove any extra padding */
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.top-left-bottom-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover; /* Ensure the image scales properly */
+}
+
+
+
+
+.top-right-footer {
+    display: flex; /* Align sections side by side */
+    justify-content: space-around; /* Add spacing between the sections */
+    align-items: flex-start; /* Align items to the top */
+    padding-top: 6rem;
+    width: 30%; /* Set a larger width, adjust as necessary */
+    margin: 0 auto; /* Center the footer horizontally */
+}
+
+
+.top-right-footer-links {
+    display: flex; /* Ensure child elements are in a row */
+    gap: 5rem; /* Add space between the links */
+    width: 100%; /* Use available space for alignment */
+}
+
+.top-right-footer-links-1,
+.top-right-footer-links-2,
+.top-right-footer-links-3 {
+    display: flex;
+    flex-direction: column; /* Keep items in each link section stacked vertically */
+    gap: 1rem; /* Add spacing between the items in each section */
+}
+
+.top-right-footer-links-1 h1,
+.top-right-footer-links-2 h1,
+.top-right-footer-links-3 h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333; /* Customize header color */
+}
+
+.top-right-footer-links-1 li,
+.top-right-footer-links-2 li,
+.top-right-footer-links-3 li {
+    list-style: none;
+    color: #000; /* Adjust text color */
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.top-right-footer-links-1 li:hover,
+.top-right-footer-links-2 li:hover,
+.top-right-footer-links-3 li:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Add hover effect color */
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.bottom-footer-top{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    padding-left: 6rem;
+}
+
+
+.bottom-footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+
+
