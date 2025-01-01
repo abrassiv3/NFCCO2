@@ -1,7 +1,6 @@
 import React from "react";
 import icon from "../assets/logo/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 import "./InfoSection.css";
-import woman from "../assets/_KGP6196.JPG";
 import icon1 from "../assets/logo/target_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 import icon2 from "../assets/logo/emoji_objects_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
 import icon3 from "../assets/logo/volunteer_activism_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
@@ -65,7 +64,7 @@ function InfoSection() {
                     <button>About Us</button>
                 </div>
                 <div className="bottom-side-bottom">
-                    <img className="woman-image" src={woman} alt="" />
+                    <img className="woman-image" src="https://ik.imagekit.io/fcuzgktdi/assets/_KGP6196.JPG?updatedAt=1735723840497" alt="" />
                     <div className="cards-container">
                         {cards.map((card, index) => (
                             <div key={index} className="card">

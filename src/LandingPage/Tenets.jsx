@@ -1,14 +1,11 @@
 import React from "react";
-import Tenet1 from "../assets/Tenets/tenets_g12.png";
-import Tenet2 from "../assets/Tenets/tenets_g13.png";
-import Tenet3 from "../assets/Tenets/tenets_g14.png";
 import "./Tenets.css";
 
 function Tenets() {
     const tenets = [
-        { id: 1, src: Tenet1, title: "People", alt: "Tenet 1 description" },
-        { id: 2, src: Tenet2, title: "Ecology", alt: "Tenet 2 description" },
-        { id: 3, src: Tenet3, title: "Community", alt: "Tenet 3 description" },
+        { id: 1, src: "https://ik.imagekit.io/fcuzgktdi/assets/Tenets/tenets_g12.png?updatedAt=1735723905210", title: "People", alt: "Tenet 1 description" },
+        { id: 2, src: "https://ik.imagekit.io/fcuzgktdi/assets/Tenets/tenets_g13.png?updatedAt=1735723917176", title: "Ecology", alt: "Tenet 2 description" },
+        { id: 3, src: "https://ik.imagekit.io/fcuzgktdi/assets/Tenets/tenets_g14.png?updatedAt=1735723903692", title: "Community", alt: "Tenet 3 description" },
     ];
 
     return (

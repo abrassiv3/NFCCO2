@@ -7,7 +7,7 @@ import image3 from "../assets/_KGP6384.JPG";
 import image4 from "../assets/pexels-joe-arts-1830507-3505000.jpg";
 import image5 from "../assets/pexels-thu-trang-1190570-2265090.jpg";
 
-const images = [image1, image2, image3, image4, image5];
+const images = ["https://ik.imagekit.io/fcuzgktdi/assets/_KGP6196.JPG?updatedAt=1735723840497", "https://ik.imagekit.io/fcuzgktdi/assets/_KGP6196.JPG?updatedAt=1735723840497", "https://ik.imagekit.io/fcuzgktdi/assets/_KGP6196.JPG?updatedAt=1735723840497", "https://ik.imagekit.io/fcuzgktdi/assets/_KGP6196.JPG?updatedAt=1735723840497", "https://ik.imagekit.io/fcuzgktdi/assets/pexels-joe-arts-1830507-3505000.jpg?updatedAt=1735723666739"];
 
 const GalleryPreview = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

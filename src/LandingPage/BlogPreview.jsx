@@ -10,24 +10,26 @@
     {
       title: "Exploring Ndoto's Best Trails",
       summary: "A guide to the most scenic trails, including difficulty levels, what to expect, and tips for first-time hikers.",
-      image: image1,
+      image: "https://ik.imagekit.io/fcuzgktdi/assets/_KGP6807.JPG?updatedAt=1735723843367",
     },
     {
       title: "A Day in the Life of Lizard",
       summary: "Dive into the daily life of a key animal species found in the conservancy, complete with fun facts, photos, and conservation efforts.",
-      image: image2, 
+      image: "https://ik.imagekit.io/fcuzgktdi/assets/_KGP5985.JPG?updatedAt=1735723782194", 
     },
     {
       title: "Eco-Friendly Journey Today",
       summary: "Tips for visitors and locals on reducing their carbon footprint, like reusable water bottles, carpooling, or planting native plants.",
-      image: image3,
+      image: "https://ik.imagekit.io/fcuzgktdi/assets/pexels-joe-arts-1830507-3505000.jpg?updatedAt=1735723666739",
     },
     {
       title: "From Idea to Ecosystem",
       summary: "A brief overview of how the conservancy came to be, notable milestones, and its impact on the community and biodiversity.",
-      image: image4,
+      image: "https://ik.imagekit.io/fcuzgktdi/assets/_KGP6384.JPG?updatedAt=1735723906345",
     },
   ];
+
+  
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
