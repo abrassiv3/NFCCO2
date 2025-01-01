@@ -68,8 +68,7 @@
 .tenet-card img {
     width: 350px;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
 }
 
 .tenet-card img:hover {
