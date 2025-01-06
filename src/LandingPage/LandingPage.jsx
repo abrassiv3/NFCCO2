@@ -19,7 +19,7 @@ function LandingPage () {
             <BlogPreview/>
             <Testimonial/>
             <GalleryPreview/>
-            <Footer/>
+            {/* <Footer/> */}
 
         </div>
     )
